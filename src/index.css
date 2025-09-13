@@ -79,41 +79,61 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Night Sky & Mountains */
+    --background: 220 30% 8%;
+    --foreground: 45 100% 85%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    /* Moonlit Cards & Surfaces */
+    --card: 220 25% 12%;
+    --card-foreground: 45 90% 85%;
+    --card-overlay: 220 25% 12% / 0.9;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 45 90% 85%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    /* Monastery Night Colors - Golden Moon & Deep Maroon */
+    --primary: 45 100% 70%;  /* Golden Moonlight */
+    --primary-foreground: 220 30% 8%;
+    --primary-glow: 45 100% 80%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 80% 35%;  /* Deep Night Maroon */
+    --secondary-foreground: 45 100% 85%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Silver Moonbeam Accents */
+    --accent: 210 30% 75%;  /* Silver Moonbeam */
+    --accent-foreground: 220 30% 15%;
+    --accent-glow: 210 40% 85%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    /* Night Neutral Tones */
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 15% 65%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 45 100% 85%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 220 20% 25%;
+    --input: 220 20% 15%;
+    --ring: 45 100% 70%;
+
+    /* Night Mountain Gradients */
+    --gradient-mountain: linear-gradient(135deg, hsl(220 40% 15%), hsl(200 30% 20%));
+    --gradient-sunrise: linear-gradient(135deg, hsl(45 100% 70%), hsl(45 80% 60%));
+    --gradient-monastery: linear-gradient(135deg, hsl(0 80% 35%), hsl(45 100% 70%));
+    --gradient-sky: linear-gradient(180deg, hsl(220 60% 10%), hsl(200 40% 15%));
+
+    /* Night Shadows & Effects */
+    --shadow-monastery: 0 20px 40px -10px hsl(45 100% 70% / 0.4);
+    --shadow-mountain: 0 10px 30px -5px hsl(220 30% 5% / 0.6);
+    --shadow-glow: 0 0 50px hsl(45 100% 70% / 0.6);
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 45 90% 85%;
+    --sidebar-primary: 45 100% 70%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 45 90% 85%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 45 100% 70%;
   }
 }
 

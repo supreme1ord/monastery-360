@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
+import { useTheme } from "next-themes";
 import heroMonastery from "@/assets/hero-monastery.jpg";
 import mountainBackground from "@/assets/mountain-background.jpg";
+import moonClouds from "@/assets/moon-clouds.jpg";
 
 const MonasteryHero = () => {
+  const { theme } = useTheme();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${mountainBackground})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+        style={{ 
+          backgroundImage: theme === 'dark' ? `url(${moonClouds})` : `url(${mountainBackground})`,
+          opacity: theme === 'dark' ? 0.8 : 1
+        }}
       >
         <div className="absolute inset-0 bg-gradient-sky opacity-60" />
       </div>
